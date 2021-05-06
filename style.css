@@ -1,1 +1,74 @@
-ECHO is on.
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+:root {
+    --corCabecallho: #573d62;
+    --corBotao: rgb(123, 70, 172);
+    --corRodape: #1e1e1e;
+    --corClaraLetras: white;
+    --corEscuraLetras: black;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--corEscuraLetras);
+}
+header {
+    height: 200px;
+    background-color: var(--corCabecallho, purple);
+    color: var(--corClaraLetras, white);
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.flex-conteiner {
+    display: flex;
+    justify-content: center;
+}
+#cole {
+    flex-grow: 0.9;
+}
+#button {
+    height: 36px;
+    background-color: var(--corBotao, purple);
+    border: 0;
+    color: var(--corClaraLetras, white);
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links p {
+    margin-right: 50px;
+    margin-bottom: 44px;
+}
+
+.visitas p {
+    height: 40px;
+    width: 250px;
+    background-color: var(--corCabecallho);
+    color: var(--corClaraLetras);
+    padding-top: 10px;
+}
+img {
+    height: 300px;
+    width: 300px;
+}
+footer {
+    height: 70px;
+    background-color: var(--corRodape);
+    color: var(--corClaraLetras);
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 400px) {
+    section {
+        display: inline;
+    }
+    .img {
+        display: block;
+    }
+    .input {
+        flex-flow: column;
+    }
+}
